@@ -226,7 +226,7 @@ function getRectangleString(width, height) {
 function encodeToRot13(str) {
   const input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
   const output = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
-  return str.split('').map((letter) => (input.includes(letter) ? output[input.indexOf(letter)] : 'error')).join('');
+  return str.split('').map((letter) => (input.includes(letter) ? output[input.indexOf(letter)] : letter)).join('');
 }
 
 /**
