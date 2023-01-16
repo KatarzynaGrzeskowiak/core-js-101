@@ -142,8 +142,8 @@ function getLastDigit(value) {
  *     '37'     => 37
  * '-525.5'     => -525.5
  */
-function parseNumberFromString(value) {
- return parseFloat(value);
+function parseNumberFromString(value) { 
+  return parseFloat(value);
 }
 
 /**
