@@ -518,9 +518,9 @@ function distinct(arr) {
  *   }
  */
 function group(array, keySelector, valueSelector) {
-  return array.reduce((acc, value) => {
-    const key = keySelector(value);
-    const value = valueSelector(value);
+  return array.reduce((acc, item) => {
+    const key = keySelector(item);
+    const value = valueSelector(item);
     if (acc.has(key)) {
       acc.get(key).push(value);
     } else {
